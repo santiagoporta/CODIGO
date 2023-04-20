@@ -1,0 +1,105 @@
+/* Sintaxis de CSS / Selector puede ser una etiqueta de HTML
+propiedad es un atributo que le vamos a dar a las etiquetas->
+
+selector  {
+    propiedad: valor;
+}
+
+*/
+
+/* el reseteo / Se utiliza el selector universal * / le saco el margen y el relleno  con dos propiedades que se llaman margin y padding / La posibilidad de poder decidir nosotros mismos los  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Defino la unidad general de medida para todo el proyecto*/
+html {
+    font-size: 40px;
+}
+
+h1 {
+    color: rgb(255, 47, 47);
+}
+
+
+
+/* Para individualizar los elementos de HTML en CSS puedo utilizar las clases / siempre una class lleva el punto adelante */
+
+/* ID / # delante del nombre del ID */
+
+#servicios {
+    background-color: khaki;
+}
+
+/* La diferencia entre class y ID es que class se puede reutilizar pero ID no  / Caso de la vida: ID es como tu DNI , class es como un atributo tuyo
+
+ID = para vincular enlaces , identificar una seccion completa
+o javascript u otros lenguajes
+
+class= lo vamos a usar todo el tiempo
+
+*/
+/* Propiedades */
+.paragraph {
+    /* Color de texto*/
+    color: black;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 80px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Unidades de medida */
+
+/* Unidades Absolutas - en DW decimos que son absolutas porque no cambian su tamaño en distintas pantallas
+cm - pt - mt
+*/
+
+
+/* Unidades Relativas - en DW son las que se adaptan al tipo de pantalla
+
+px % em rem vh vw
+
+*/
+
+.paragraph-dos {
+    font-size: 18px;
+}
+
+#pie-de-pagina {
+    background-color: blue;
+    /* El ancho / 50% de cualquier pantalla en la que estemos mirando el footer */
+    width: 50%;
+}
+
+/* rem / Directamente proporcional al elemento root / root es la medida general que nos da el navegador / 16px */
+
+a {
+    font-size: 4rem; /* 16px * 4 */
+}
+
+img {
+    height: 20rem;
+}
+
+/* em / Directamente proporcional al elemento HTML o :root que son definidos por nosotros mismos */
+
+/* Puede usar la que quieran y donde quieran 
+Parrafos, titulos , enlaces suelen tener px en el font-size 
+Las imagenes y videos , o multimedia, suele utilizar %, vh y vw 
+Las propiedades de la caja, margin y padding puede usar rem o em
+
+*/
+
+body {
+    /* url() -> funcion preguntarme, donde esta la imagen? */
+    background-image: url('michi2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
